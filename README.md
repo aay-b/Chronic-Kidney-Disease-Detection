@@ -17,14 +17,15 @@ This project focuses on the early detection, severity prediction, and progressio
 
 
 **🛠️ Technologies Used**
-Python
 
-Pandas, NumPy
+* Python
 
-Scikit-learn
+* Pandas, NumPy
 
-Matplotlib / Seaborn (for visualization)
+* Scikit-learn
 
-Jupyter Notebook
+* Matplotlib / Seaborn (for visualization)
 
-Machine Learning (Classification models)
+* Jupyter Notebook
+
+* Machine Learning (Classification models)
