@@ -2,6 +2,7 @@
 Early Prediction for Chronic Kidney Disease Detection: A Progressive Approach to Health Management
 
 **📌 Overview**
+
 This project focuses on the early detection, severity prediction, and progression monitoring of Chronic Kidney Disease (CKD) using machine learning and routine medical test data. By analyzing key health attributes such as GFR, creatinine, hemoglobin, and albumin levels, the system enables timely diagnosis and better treatment planning.
 
 **🔬 Scenarios Covered**
