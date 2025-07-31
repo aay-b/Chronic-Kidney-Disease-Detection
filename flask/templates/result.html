@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CKD Prediction Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        h1 {
+            color: #333;
+        }
+        .result {
+            font-size: 20px;
+            color: red;
+            font-weight: bold;
+        }
+        img {
+            margin-top: 20px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Chronic Kidney Disease</h1>
+    <p>A Machine Learning Web App Built with Flask</p>
+
+    <p class="result">Prediction: {{ prediction_text }}</p>
+
+    <img src="{{ url_for('static' , filename='excited.gif') }}" alt="Prediction ">
+
+</body>
+</html>

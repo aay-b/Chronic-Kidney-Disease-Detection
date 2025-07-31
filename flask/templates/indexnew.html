@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Predict CKD</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            text-align: center;
+            padding: 40px;
+        }
+        .header {
+            background: #cc0066;
+            color: white;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+        form {
+            display: inline-block;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #ccc;
+        }
+        input, select {
+            display: block;
+            margin: 15px auto;
+            padding: 10px;
+            width: 80%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 20px;
+            background: #cc0066;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #a8004f;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h2>Chronic Kidney Disease</h2>
+        <p>A Machine Learning Web App Built with Flask</p>
+    </div>
+
+    <form action="/predict" method="POST">
+        <input type="number" name="id" placeholder="ID" required>
+        <input type="number" step="any" name="age" placeholder="Age" required>
+        <input type="number" step="any" name="blood_pressure" placeholder="Blood Pressure" required>
+        <input type="number" step="any" name="specific_gravity" placeholder="Specific Gravity" required>
+        <input type="number" step="any" name="albumin" placeholder="Albumin" required>
+        <input type="number" step="any" name="sugar" placeholder="Sugar" required>
+
+        <select name="red_blood_cells" required>
+            <option value="">Red Blood Cells</option>
+            <option value="1">Abnormal</option>
+            <option value="0">Normal</option>
+        </select>
+
+        <select name="pus_cell" required>
+            <option value="">Pus Cell</option>
+            <option value="1">Abnormal</option>
+            <option value="0">Normal</option>
+        </select>
+
+        <select name="pus_cell_clumps" required>
+            <option value="">Pus Cell Clumps</option>
+            <option value="1">Present</option>
+            <option value="0">Not Present</option>
+        </select>
+
+        <select name="bacteria" required>
+            <option value="">Bacteria</option>
+            <option value="1">Present</option>
+            <option value="0">Not Present</option>
+        </select>
+
+        <input type="number" step="any" name="blood_glucose_random" placeholder="Blood Glucose Random" required>
+        <input type="number" step="any" name="blood_urea" placeholder="Blood Urea" required>
+        <input type="number" step="any" name="serum_creatinine" placeholder="Serum Creatinine" required>
+        <input type="number" step="any" name="sodium" placeholder="Sodium" required>
+        <input type="number" step="any" name="potassium" placeholder="Potassium" required>
+        <input type="number" step="any" name="haemoglobin" placeholder="Haemoglobin" required>
+        <input type="number" step="any" name="packed_cell_volume" placeholder="Packed Cell Volume" required>
+        <input type="number" step="any" name="white_blood_cell_count" placeholder="White Blood Cell Count" required>
+        <input type="number" step="any" name="red_blood_cell_count" placeholder="Red Blood Cell Count" required>
+
+        <select name="hypertension" required>
+            <option value="">Hypertension</option>
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select>
+
+        <select name="diabetes_mellitus" required>
+            <option value="">Diabetes Mellitus</option>
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select>
+
+        <select name="coronary_artery_disease" required>
+            <option value="">Coronary Artery Disease</option>
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select>
+
+        <select name="appetite" required>
+            <option value="">Appetite</option>
+            <option value="1">Poor</option>
+            <option value="0">Good</option>
+        </select>
+
+        <select name="pedal_edema" required>
+            <option value="">Pedal Edema</option>
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select>
+
+        <select name="anemia" required>
+            <option value="">Anemia</option>
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select>
+
+        <button type="submit">Predict</button>
+    </form>
+
+</body>
+</html>
