@@ -31,6 +31,19 @@ This project is a complete end-to-end Machine Learning application that predicts
    - Handling missing values
    - Label encoding categorical variables
    - Feature scaling where necessary
+2. Exploratory Data Analysis
+   - Pairwise relationships
+   - Correlation heatmaps
+   - Visual feature inspection
+3. Model Training
+   - Trained on four classification models
+   - Evaluated using accuracy & confusion matrix
+   - Neural Network built using Keras for advanced prediction
+4. Model Saving
+   - The best-performing model is saved using pickle
+5. Web Deployment
+   - Flask app receives user inputs through a web form
+   - Predicts and displays output to the user in real-time
 
 ---
 
