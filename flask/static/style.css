@@ -1,0 +1,25 @@
+.banner {
+  background-color: #1f2937; /* dark gray-blue */
+  color: white;
+  padding: 12px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+.banner h1 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.banner nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+.banner nav a:hover {
+  text-decoration: underline;
+}
