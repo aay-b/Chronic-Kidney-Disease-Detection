@@ -1,17 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>CKD Prediction - Home</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <meta charset="UTF-8">
+  <title>CKD Prediction - Home</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <div class="banner">
-        <h1>CHRONIC KIDNEY DISEASE PREDICTION</h1>
-        <nav>
-            <a href="/Home">HOME</a>
-            <a href="/Prediction">PREDICT</a>
-        </nav>
+  <header class="banner">
+    <h1>CHRONIC KIDNEY DISEASE PREDICTION</h1>
+  </header>
+
+  <main class="hero">
+    <img src="{{ url_for('static', filename='ckd_free.jpg') }}"
+         alt="Illustration of CKD stages or kidney graphic">
+    <div class="buttons">
+      <a href="{{ request.path }}" class="btn">HOME</a>
+      <a href="/Prediction" class="btn">PREDICT</a>
     </div>
+
+    <footer class="attribution">
+      <small>
+        Image by Nick Youngson, <a href="https://pix4free.org/">Pix4free</a>, licensed under CC BY‑SA 3.0
+      </small>
+    </footer>
+  </main>
 </body>
 </html>
